@@ -1,15 +1,13 @@
 """
-search through each row by character
-for each number found, search around (row-1:row+1, col-1:col+1) for symbols(not .)
-if symbol found, add number to total of part numbers
-possible search coordinates: row-1:col-1, row-1:col, row-1:col+1, row:col-1, etc.
-coordinate function: (row) - range(row-1,row+1)
+search through rows for * (gear symbol)
+if * has exactly two numbers adjacent, 
+multiply the two numbers to get the gear ratio
 """
 
 import pandas as pd
 
 
-input = pd.read_csv('Day3\\input.txt', header = None)
+input = pd.read_csv('Day3\\test_input.txt', header = None)
 input = input[0].apply(lambda x: pd.Series(list(x)))
 
 max_row, max_col = input.shape
