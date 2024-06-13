@@ -1,0 +1,2 @@
+Index,Fixation,Saccade,Valid,Invalid,FRV,Phone
+0,11576.0,4000.0,12294.0,8305.0,9354.0,420.0
